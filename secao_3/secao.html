@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+</head>
+<body>
+    <div>
+        <div id="menu">
+            <nav>
+                <ol>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="secao_1.html">Seção 1</a></li>
+                    <li><a href="secao_2.html">Seção 2</a></li>
+                    <li><a href="secao_3.html">Seção 3</a></li>
+                    <li><a href="secao_4.html">Seção 4</a></li>
+                    <li><a href="secao_5.html">Seção 5</a></li>
+                </ol>
+            </nav>
+        </div>
+        <section>
+            <hgroup>
+                <h2>Imagens e CSS</h2>
+            </hgroup>
+
+            <figure>
+                <img src="img_5.jpeg">
+            </figure>
+
+            <p>
+                É importante enfatizar que ao lidar com imagens em HTML, é essencial exercer um controle sobre o tamanho das imagens que serão carregadas no site. Isso se deve ao fato de que, quando o site estiver hospedado e experimentar um alto volume de acessos, o processo de download das imagens pode sobrecarregar o servidor, resultando em custos adicionais para hospedagem. Para mitigar esse problema, é aconselhável otimizar as imagens de forma que o tamanho delas seja efetivamente gerenciado. Embora não exista uma regra rígida, a recomendação é buscar um equilíbrio, visando um tamanho ideal para as imagens, a fim de garantir um carregamento eficiente e uma experiência de usuário otimizada.
+            </p>
+
+            <p>
+                - A tag &ltfigure&gt é uma tag semântica usada para proporcionar organização no código HTML quando se trabalha com imagens. Sempre que houver a inclusão de imagens no código, é recomendado envolvê-las com a tag &ltfigure&gt para garantir uma estrutura mais coerente e compreensível. Além disso, a tag &ltfigcaption&gt também é empregada para imagens. Essa tag permite a adição de legendas às imagens, contribuindo para uma melhor contextualização. Vale ressaltar que a tag &ltfigcaption&gt deve ser aninhada dentro da tag &ltfigure&gt, criando assim uma associação direta entre a imagem e sua respectiva legenda.
+            </p>
+
+            <p>
+                Em muitos casos, incorporar os estilos CSS diretamente no código HTML pode resultar em arquivos extensos, com um grande número de linhas. Como solução, é possível definir os estilos CSS em um arquivo separado e, em seguida, referenciá-lo no código HTML. Isso contribui para a manutenção de um código mais enxuto.
+            </p>
+
+            <p>
+                - Para adotar essa abordagem, você pode criar uma pasta destinada aos arquivos de estilos CSS dentro do diretório do projeto. Em seguida, é essencial inserir a estrutura @charset "UTF-8"; no início do arquivo CSS antes de declarar quaisquer estilos. Exemplo:
+            </p>
+            <ul id="lista_1">
+                <li><span class="vermelho_claro">@charset"UTF-8";</span></li>
+                &nbsp;
+                <li><span class="blue">body</span></li>{
+                    <li id="top_1">background-color:#19142f;</li>
+                    <li id="top_2">color: black;</li>
+                <li>}</li>
+            </ul>
+
+            <p>
+                - Para importar os estilos CSS dentro do código html deve-se usar a seguinte estrutura de comando:
+            </p>
+
+            <ul id="lista_2">
+                <li>&lt<span class="blue">link rel</span>="stylesheet" <span class="blue">type</span>="text/CSS" <span class="blue">href</span>="pasta do arquivo CSS/arquivo.css"/&gt</li>
+            </ul>
+
+            <p>
+                - Essa linha de código utiliza a tag <link> para fazer a ligação entre o arquivo CSS externo e o documento HTML. Certifique-se de substituir "caminho_do_arquivo_css" pelo diretório correto onde seu arquivo CSS está localizado e "arquivo.css" pelo nome do arquivo CSS que você deseja importar.
+            </p>
+
+            <p>
+                - Como já explicado anteriormente, a tag &ltfigure&gt é empregada para organizar o código relacionado à exibição de imagens. Nesse contexto, é viável criar uma classe que permite a configuração conjunta de elementos dentro dessa classe, seguindo a prática de separar estilos em um arquivo CSS dedicado. A sintaxe para realizar isso é simples:
+            </p>
+            <ul id="lista_3">
+                <li>&lt<span class="blue">figure class</span> = "nome_da_classe"&gt</li>
+                    <li id="top_3">imagem</li>    
+                <li>&lt/<span class="blue">figure</span>&gt</li>
+            </ul>
+            <p>
+                - Em outras palavras, a classe serve como um identificador para a tag semântica ser configurada em CSS na pasta reservada para este fim.
+            </p>
+            
+            <p>
+                - Após isso, é necessário fazer referência a essa classe no arquivo CSS correspondente para aplicar todas as configurações de imagens no HTML. Dessa forma, você define as configurações específicas para a classe nome_da_classe dentro das regras de estilo do arquivo CSS. Ao fazer isso, todas as instâncias da tag &ltfigure&gt com a classe nome_da_classe no HTML receberão essas configurações, resultando em uma apresentação visual consistente e organizada. Certifique-se de substituir "nome_da_classe" pelo nome real da classe que você definiu no HTML.
+            </p>
+            <ul id="lista_4">
+            <li><span class="blue">figure.nome_da_classe</span>{</li>
+                <li id="top_4">configurações das imagens;</li>
+            <li>}</li>
+            </ul>
+
+            <p>
+                Existem diversos comandos CSS para serem usados na configuração de imagens, texto ou qualquer outro estilo para o desenvolvimento web. Por isso, é interessante que seja feito uma pesquisa sobre estes comandos. Logo abaixo, confira 3 comandos básicos do CSS que podem ser usados para configurar uma imagem em qualquer projeto html.
+            </p>
+            
+            <p>
+                - <span class="blue">border</span>: 0px solid cor; define uma borda em torna da imagem. A cor da borda
+                é declarada no trecho 'cor' e a grossura da borda em 'px'.
+            </p>
+            
+            <p>
+                - <span class="blue">width</span>: 0%; e height:0%; define a altura e largura da imagem, respectivamente.
+            </p>
+            
+            <p>
+                - <span class="blue">box-shadow</span>: 0px 0px 0px cor; define um sombreamento em torno da imagem.
+            </p>
+
+            <p>
+                - <span class="blue">hover</span>: é um comando CSS usado para aplicar efeito sobre algum elemento ao 
+                passar o mouse
+            </p>
+
+            <hgroup>
+                <h2>Listas</h2>
+            </hgroup>
+
+            <p>
+                A tag &ltnav&gt é empregada para criar uma seção de navegação em um site, funcionando como um container para agrupar os elementos de navegação. Essa tag é usada para organizar e conter os tópicos ou links de navegação que direcionam os usuários para diferentes partes do site.
+            </p>
+
+            <p>
+                As tags &ltol&gt (lista ordenada) e &ltul&gt (lista não ordenada) são utilizadas para criar listas de itens em HTML. Os itens individuais são definidos com a tag &ltli&gt, que representa um item da lista. As listas, sejam ordenadas ou não, são agrupadas dentro de um container. Por exemplo, considere um cenário em que um site relacionado à informática é criado. Para o menu de navegação do site, é possível usar uma lista ordenada (&ltol&gt) que contém vários itens (&ltli&gt) representando os principais tópicos do site. A estrutura ficaria assim:
+            </p>
+
+            <ul id="lista_5">
+            <li>&lt<span class="blue">nav</span>&gt</li>
+                <li>&lt<span class="blue">h1</span>&gtTópicos&lt<span class="blue">h1</span>&gt</li>
+                <li>&ltol&gt</li>
+                    <li id="top_5">&lt<span class="blue">li</span>&gtProcessador&lt/<span class="blue">li</span>&gt</li>
+                    <li id="top_6">&lt<span class="blue">li</span>&gtMemória RAM&lt/<span class="blue">li</span>&gt</li>
+                    <li id="top_7">&lt<span class="blue">li</span>&gtPlaca-mãe&lt/<span class="blue">li</span>&gt</li>
+                    <li id="top_8">&lt<span class="blue">li</span>&gt HD e SSD&lt/<span class="blue">li</span>&gt</li>
+                <li>&lt/<span class="blue">ol</span>&gt</li>
+            <li>&lt/<span class="blue">nav</span>&gt</li>
+            </ul>
+
+            <p>
+                - Ainda sobre as listas, é possível utilizar um comando type. Basicamente, este comando define como será a ordenação da lista, isto é, se será enumerada ou alfabética. Na prática:
+            </p>
+            
+            <ul id="lista_6">
+            <li>&lt<span class="blue">ol</span> <span class="blue">type</span> = "1"&gt</li>
+                <li id="top_9">&lt<span class="blue">li</span>&gt</li>
+            <li>&lt/<span class="blue">ol</span>&gt</li>
+            </ul>
+
+            <p>
+                - Os tipos de ordenação no type é limitada. As ordenações podem ser por letras maiúsculas ou minúsculas, números e símbolos romanos.
+            </p>
+
+            <p>
+                - Quando se declara o tipo de ordenação utilizando o atributo type, é suficiente fazer referência ao primeiro caractere do tipo de ordenação desejado. Por exemplo, ao criar uma lista alfabética, basta utilizar "a" para minúsculas ou "A" para maiúsculas. O mesmo princípio se aplica a listas numéricas ou com algarismos romanos. Ao definir o tipo de ordenação, apenas o primeiro caractere é necessário para indicar o padrão de enumeração.
+            </p>
+
+            <p>
+                - O type ainda pode ser complementado com o start. Este comando simplesmente define o ponto de partida da ordenação. Exemplo: uma lista numérica que não se inicie com o 1 e sim, com o 3. Na prática:
+            </p>
+
+            <ul id="lista_7">
+            <li>&lt <span class="blue">ol type</span> = "1" <span class="blue">start</span> = "3"&gt</li>
+                <li id="top_10">&lt<span class="blue">li</span>&gt</li>
+            <li>&lt/<span class="blue">ol</span>&gt</li>
+            </ul>
+
+            <p>
+                <span class="vermelho">OBS:</span> O start só aceita valores inteiros. Independentemente do tipo de ordenação, o start só receberá como referência o termo que irá iniciar a sequência, ou seja, se será o 1º, o 2º, o 3º e etc.
+            </p>
+
+            <p>
+                - O atributo type não é usado em listas não enumeradas '&ltul&gt', mas sim em listas ordenadas '&ltol&gt', onde você pode especificar o tipo de enumeração, como algarismos romanos, letras e etc.
+            </p>
+
+            <p>
+                - Saiba que é possível utilizar listas dentro de listas. Isto é, &ltol&gt dentro de &ltul&gt e vice-versa.
+            </p>
+
+            <hgroup>
+                <h2>Links</h2>
+            </hgroup>
+
+            <p>
+                É comum em vários sites conter algum trecho do conteúdo da página um link que redireciona o usuário para outra página. Geralmente, estes links ficam  referenciados dentro de uma palavra do texto de um conteúdo do site por exemplo.
+            </p>
+
+            <p>
+                - O 1º passo para criar este tipo de link no site é usar uma tag âncora entre o trecho do conteúdo do site no qual deseja-se colocar o link. A tag de âncora é &lta&gt
+            </p>
+
+            <p>
+                - O 2º passo é utilizar o href dentro da tag &lta&gt. No comando href, deverá ser passado o link do site referenciado. Na prática:
+            </p>
+
+            <ul id="lista_8">
+                <li>&lt<span class="blue">a href </span>= "link do site"&gtSaiba mais &lt/<span class="blue">a</span>&gt</li>
+            </ul>
+            <p>
+           <span class="vermelho"> OBS:</span> O trecho "Saiba mais" será quem receberá o link de referência
+            </p>
+            
+            <p>
+                - Mesmo a estrutura do comando sendo simples, ao executar o código html e clicar no link referenciado, a página do link irá sobrepor a página do código orginal. Para resolver isto, utiliza-se o comando 'target'. Este comando permitirá que tanto a página do código html quanto a página do link referenciado fiquem abertas no navegador sem que nenhuma sobreponha a outra. Na prática:
+            </p>
+
+            <ul id="lista_9">
+                <li>&lt<span class="blue">a href </span>= "link do site" <span class="blue">target</span> = "<span class="vermelho_claro">_blank</span>"&gt Saiba mais&lta/&gt</li>
+            </ul>
+
+            <p>
+                <span class="vermelho">OBS:</span> O "blank" é o comando que deve ser referenciado para que não haja sobreposição de página.
+            </p>
+
+            <p>
+                - Existe outros comandos que podem ser referenciados no target que apresentam outras funcionalidades. Exemplo: o '_self', este parâmetro permite que o link referenciado sobreponha a página do código html.
+            </p>
+            
+
+            <hgroup>
+                <h2>Outras configurações CSS</h2>
+            </hgroup>
+
+            <p>
+                Na pasta usada para comandos CSS do código, é possível criar um bloco de específico para configuração do menu de um site. Este bloco deve iniciar e terminar com chaves. No caso, vamos supor que no código html exista uma tag 'nav' contendo todos os tópicos do site. Para criar o bloco, será necessário fornecer um 'id' para esta tag no código html:
+            </p>
+
+            <ul id="lista_10">
+                <li id="top_11">&lt<span class="blue">nav id</span> = "menu"&gt</li>
+                <li id="top_12">&lt/<span class="blue">nav</span>&gt</li>
+            </ul>
+
+            <p>
+                <span class="vermelho">OBS:</span> A tag nav agora é referenciada como "menu".
+            </p>
+            
+            <p>
+                - A partir disso, na pasta CSS, cria-se o bloco de comando para configuração do menu passsando a tag nav, o id da tag nav e a tag li (que é onde estará os itens, ou seja, os tópicos que serão configurados). Na prática:
+            </p>
+
+            <ul id="lista_11">
+                <li><span class="blue">nav#menu li</span> {</li>
+                    <li id="top_13">comandos...</li>
+                <li>}</li>
+            </ul>
+            
+            <p>
+                <span class="vermelho">OBS:</span> O símbolo '#' é usado para referenciar qual o id dado para a tag no código html
+            </p>
+
+            <p>
+                - A mesma estrutura de bloco de comando pode ser usada para configurar e personalizar diferentes partes do site na pasta CSS. Basta que seja referenciado corretamente as tags e em qual elemento de agrupamento está contido nessas tags. Exemplo: para configurar uma imagem na pasta CSS, deverá ser passado o figure (elemento que agrupa mídia) e o nome dado à este elemento, se houver. Na prática:
+            </p>
+
+            <ul id="lista_12">
+                <li><span class="blue">figure.imagens-teste </span>{</li>
+                    <li id="top_14">comandos...</li>
+                <li>}</li>
+            </ul>
+            
+            <p>
+                <span class="vermelho">OBS:</span> 'imagens-teste' é o nome referenciado para o elemento agrupador (figure). Porém, não é obrigatório que este elemento possua um id. Poderia ser usado somente o figure para o bloco de comando.
+            </p>
+        
+        </section>
+    </div>
+
+</body> 
+</html>
 
