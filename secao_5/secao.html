@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+</head>
+
+<body>
+    <div>
+        <div id="menu">
+            <nav>
+                <ol>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="secao_1.html">Seção 1</a></li>
+                    <li><a href="secao_2.html">Seção 2</a></li>
+                    <li><a href="secao_3.html">Seção 3</a></li>
+                    <li><a href="secao_4.html">Seção 4</a></li>
+                    <li><a href="secao_5.html">Seção 5</a></li>
+                </ol>
+            </nav>
+        </div>
+    <section>
+        <hgroup>
+            <h2>JavaScript</h2>
+        </hgroup>
+
+        <figure>
+            <img src="img_7.jpg">
+        </figure>
+
+        <p>
+            Para iniciar a explicação, é importante ressaltar que JavaScript não tem nada a ver com a linguagem Java em si. O nome "Java" em "JavaScript" surgiu devido a uma jogada de marketing entre duas empresas: Netscape e Sun Microsystems.
+        </p>
+        <p>
+            - A Sun Microsystems era a empresa que estava lançando a linguagem de programação Java, enquanto a Netscape estava desenvolvendo a linguagem LiveScript. Por meio de uma parceria entre essas duas empresas, a Netscape decidiu incluir "Java" no nome de sua linguagem como uma estratégia de marketing. Assim, o JavaScript foi criado.
+        </p>
+        <p>
+            - Apesar de não terem uma relação direta, as linguagens Java e JavaScript possuem semelhanças em sua sintaxe, uma vez que ambas são baseadas na linguagem C.
+        </p>
+        <p>
+            - O objetivo principal do JavaScript é proporcionar a interatividade do usuário com uma aplicação web. Em outras palavras, essa linguagem permite que o usuário interaja com uma página da web, como preencher um formulário ou usar botões de clique, por exemplo. 
+        </p>
+        <p>
+            Todo código de JavaScript deve ser incluído dentro da tag &ltscript&gt&lt/script&gt.
+        </p>
+        <p>
+            O comando <span class="blue_destacado">document.write</span>(""); é o comando usado para escrever alguma mensagem no corpo do site.
+        </p>
+        <p>
+            A função <span class="blue_destacado">alert</span>(""); é usada para exibir uma caixa de alerta na página. Esta caixa é acompanhada por um botão "OK" para fechá-la.
+       </p>
+       <p>
+            <span class="vermelho">OBS 1:</span> Em JavaScript, a maioria dos comandos deve ser finalizada com um ponto e vírgula (;) para indicar o término de uma instrução. É uma boa prática sempre incluir ponto e vírgula para evitar possíveis erros de interpretação do código pelo navegador. No entanto, o JavaScript também possui um mecanismo chamado "inserção automática de ponto e vírgula" (automatic semicolon insertion) que adicionará automaticamente pontos e vírgulas em certos casos onde eles estão ausentes.
+        </p>
+        <p>
+            <span class="vermelho">OBS 2:</span> É totalmente possível que haja mais de um script no html.
+        </p>
+        <hgroup>
+            <h2>Funções</h2>
+        </hgroup>
+
+        <figure>
+            <img src="img_8.jpg">
+        </figure>
+    
+        <p>
+            Em JavaScript para criar uma função deve-se seguir a seguinte estrutura:
+        </p>
+        <ul id="lista_1">
+            <li><span class="blue">function nomeFuncao</span>() {}</li>
+        </ul>
+        <p>
+            - Lembrando que todo comando JavaScript deve estar dentro de &ltscript&gt
+        </p>
+        <p>
+            - Na função, o que estiver dentro dos parênteses são os parâmetros da função. Enquanto que, o que estiver dentro das chaves são os blocos de códigos.
+        </p>
+    
+        <p>
+            O atributo onclick é usado para associar uma função JavaScript a um evento de clique em um elemento HTML, como uma imagem, botão ou qualquer outro elemento interativo.
+        </p>
+        <p>
+            O comando onmousemove tem a mesma ideia que o onclick. A diferença é que o usuário só precisará passar o mouse por cima do elemento para ser feita uma ação. No caso da imagem, quando o mouse passar pelo elemento uma ação será feita.
+        </p>
+        <p>
+            O comando onmouseout faz o oposto do onmousemove já que, irá chamar uma função quando o mouse for tirado do elemento.
+        </p>
+        <p>
+            <span class="vermelho">OBS:</span> Parâmetros são valores que são passados do seu código principal para uma função.
+        </p>
+        <p>
+            No JavaScript, para criar condicionais a sintaxe é a seguinte:
+        </p>
+        <ul id="lista_2">
+            <li><span class="blue">if</span>(condição) {</li>
+                <li id="top_1">código;</li>
+            <li>}</li>
+        </ul>
+        <p>
+            Da mesma forma que é possível carregar comandos CSS de outra pasta no código html, também é possível fazer o mesmo com o JavaScript. Para isso, basta criar uma pasta no repositório html que irá guardar os comandos JavaScript.
+        </p>
+        <p>
+            <span class="vermelho">OBS:</span> A pasta dos comandos JavaScript deve conter a extensão <span class="blue_destacado">js</span>.
+        </p>
+        <p>
+            - Para importar arquivos JavaScript de uma pasta no seu código HTML, você deve usar a tag &ltscript&gt e o atributo src para apontar para o caminho relativo do arquivo JavaScript que você deseja incluir. Essa tag pode ser colocada tanto na seção &lthead&gt quanto no final do corpo (&ltbody&gt) do seu arquivo HTML.
+        </p>
+        <p>
+            - A estrutura de comando usada para a importação, é a seguinte:
+        </p>
+        <ul id="lista_3">
+            <li>&lt<span class="blue">script</span>&gt</li>
+                <li id="top_2">src = "pasta_JavaScript/arquivo.js"</li>
+            <li>&lt/<span class="blue">script</span>&gt</li>
+        </ul>
+        <hgroup>
+            <h2>Criando Formulário com JavaScript </h2>
+        </hgroup>
+
+        <p>
+            Para criar formulários no código HTML, primeiramente, é necessário inserir todo o conteúdo do formulário no código. Este conteúdo deve estar inserido dentro da tag chamada &ltform&gt&lt/form&gt (tag utilizada para criar formulários).
+        </p>
+        <p>
+            - Cada formulário possui conjuntos de campos que identificam diferentes partes do mesmo. Por exemplo, em um formulário existem conjuntos de campos que solicitam informações básicas de uma pessoa, como nome, telefone, CPF, entre outros, assim como existem conjuntos de campos que pedem informações sobre o endereço, como logradouro, número da casa, rua, etc. Em outras palavras, esses conjuntos de campos representam diferentes grupos do formulário, cada um solicitando informações distintas.
+        </p>
+        <p>
+            - Cada um dos conjuntos de campos de um formulário deve ser inserido dentro da tag &ltfieldset&gt&lt/fieldset&gt. Isso significa que dentro da tag &ltform&gt pode haver vários &ltfieldset&gt.
+        </p>
+        <p>
+            - &ltlegend&gt&lt/legend&gt é uma tag usada para inserir os títulos dos conjuntos de campos do formulário. Ela é utilizada dentro da tag &ltfieldset&gt&lt/fieldset&gt
+        </p>
+        <p>
+            - Dentro do &ltfieldset&gt, cada um dos campos deve ser colocado dentro de tags &ltp&gt para que possam ser formatados adequadamente na página
+        </p>
+        <p>
+            Para criar uma caixa de texto dentro dos campos do &ltfieldset&gt, é necessário seguir a estrutura do comando a seguir: 
+        </p>
+        <ul id="lista_4">
+            <li>&lt<span class="blue">p</span>&gt Nome: &lt<span class="vermelho_claro">input</span> <span class="blue">type</span>="text" <span class="blue">name</span>="nomeObjeto" <span class="blue">id</span>="idObejto" &gt&lt/<span class="blue">p</span>&gt</li>
+        </ul>
+        <p>
+            Nesse exemplo, a tag &ltinput&gt está sendo usada para criar uma caixa de texto, e os atributos "type", "name" e "id" estão sendo definidos para essa caixa de texto. Certifique-se de que a escrita esteja correta e os atributos estejam devidamente configurados de acordo com a necessidade do seu formulário
+        </p>
+        <p>
+            - Existem outros atributos que complementam a tag &ltinput&gt e são: "size", "maxlength" e "placeholder". O primeiro determina quantos caracteres serão visíveis na caixa de texto. O segundo define o limite máximo de caracteres que podem ser digitados na caixa de texto. O terceiro cria um texto de orientação na caixa de texto, que é exibido de forma sombreada.
+        </p>
+        <p>
+            - Para criar botões de opção, utiliza-se o atributo "radio" no tipo (type) da tag &ltinput&gt. Além disso, é possível implementar o atributo "checked", que automaticamente selecionará uma opção quando o usuário acessar o site.
+        <p>       
+            - A tag &ltlabel&gt/label> é usada nos campos do formulário para criar rótulos associados aos elementos de entrada, como caixas de texto, botões de opção, entre outros. Quando o usuário clica no rótulo, o foco é automaticamente transferido para o elemento de entrada associado, como uma caixa de texto, tornando a experiência do usuário mais acessível e conveniente.
+       </p>
+       <p>
+            Ao criar um formulário, é necessário que os dados fornecidos nele sejam enviados para serem processados e armazenados em algum servidor, por exemplo. E para essa finalidade, existem dois métodos chamados "GET" e "POST" que são declarados na tag &ltform&gt do HTML. Basicamente, esses métodos são usados para enviar informações para o servidor. No entanto, existe uma diferença importante entre os dois métodos que deve ser levada em consideração:
+        </p>
+        <p>
+            - Usando o método get, os dados do formulário serão exibidos na URL como parâmetros de consulta. O get não é um método aconselhável em formulários que possuiram informações muito sensíveis como senhas, email, cpf e etc. Isto porque, todos estes dados ficarão exibidos na URL do site o que diminui a segurança. Este método é util, por exemplo, em formulários de pesquisa ou de opinião em que não é necessário inserir dados muito sensíveis.
+        </p>
+        <p>        
+            - Usando o método post, os dados do formulário serão enviados no corpo do protocolo HTTP para o servidor. Para formulários que receberam dados sensíveis, o post é o mais aconselhável pois, possui mais segurança já que os dados são enviados de forma oculta diferente do que acontece no método get.
+        </p>
+        <p>
+            - Segue a estrutura abaixo para declarar o método post ou get na tag &ltform&gt:
+        </p>
+        <ul id="lista_5">    
+            <li>&lt<span class="blue">form method</span>="<span class="vermelho_claro">post</span>" <span class="blue">id</span>="id_metodo" <span class="blue">action</span>="mailto:exemplo@gmail.com"&gt</li>
+        </ul>
+        <p>
+        <span class="vermelho">OBS:</span> o 'action' diz para onde os dados do formulário serão enviados. Os dados podem ser enviados à um servidor, podem ser enviados para um email ou para algum site (nesse caso, é necessário inserir a URL do site como valor para o action). No caso, a estrutura modelo de comando acima esta usando o valor mailto (que permite enviar os dados para um email).
+        </p>
+        <p>        
+            A tag &ltselect&gt&lt/select&gt é usada para criar um menu suspenso que permite ao usuário selecionar uma opção de resposta de uma lista de escolhas. Por exemplo, ao selecionar o estado em um campo 'Estado', será exibida uma lista suspensa com todos os estados territoriais, e o usuário poderá escolher em qual estado reside. Para usar essa estrutura, dentro da tag &ltselect&gt você deve declarar as tags filhas chamadas &ltoption&gt&gt/option&gt. É dentro dessas tags &ltoption&gt que você coloca as opções de resposta que o usuário poderá escolher para o campo.
+        </p>
+        <p>
+            &lt<span class="blue_destacado">input</span> <span class="blue">type</span>="submit" <span class="blue">value</span>="Enviar"/&gt este input serve para criar um botão no formulário. Assim que o botão for clicado pelo usuário, os dados do formulário serão enviados.
+        </p>
+        <p>       
+            Para chamar uma função JS no formulário, deve-se usar na tag &lt<span class="blue_destacado">form</span>&gt o comando <span class="blue_destacado">oninput</span>. Neste comando, basta passar apenas o nome da função no comando: <span class="blue_destacado">oninput</span>=<span class="vermelho_claro">"nome_funcao()"</span>
+       </p>
+ 
+    </section>
+    </div>
+</body>
+
+</html>
 
