@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+    <div>
+        <div id="menu">
+            <nav>
+                <ol>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="secao_1.html">Seção 1</a></li>
+                    <li><a href="secao_2.html">Seção 2</a></li>
+                    <li><a href="secao_3.html">Seção 3</a></li>
+                    <li><a href="secao_4.html">Seção 4</a></li>
+                    <li><a href="secao_5.html">Seção 5</a></li>
+                </ol>
+            </nav>
+        </div>
+    <section>
+        
+        <figure>
+            <img src="img_6.jpg">
+        </figure>
+
+        <p id="primeiro_p">
+            Um dos requisitos para fazer um bom site é conseguir configurar o melhor layout possível para torná-lo atrativo e interessante. Por isso, é importante ter conhecimentos sobre alguns comandos CSS mais utilizados. Acompanhe abaixo alguns deles:
+        </p>
+        <p>
+            -  A propriedade &ltmargin&gt é utilizada para ajustar o espaçamento externo dos elementos de um site, como imagens, vídeos ou textos. É possível fornecer de um a quatro valores nessa propriedade para ajustar o espaçamento dos elementos no layout. Ao utilizar somente um valor, ele define o espaçamento para todas as direções ao mesmo tempo. Quando dois valores são usados, o primeiro define o espaçamento vertical (superior e inferior), enquanto o segundo define o espaçamento horizontal (direita e esquerda).
+
+            Ao empregar três valores na propriedade margin, o primeiro valor define o espaçamento superior, o segundo valor se aplica ao espaçamento horizontal (direita e esquerda), e o terceiro valor controla o espaçamento inferior.
+        
+            Por fim, ao passar quatro valores, cada um corresponde a uma direção específica do espaçamento externo do elemento (cima, direita, baixo e esquerda). Na prática, a sintaxe correta seria:
+        </p>
+        <ul id="lista_1">            
+            <li>&ltmargin&gt: 0px(lado de cima) 0px(lado da direita) 0px(lado de baixo) 0px(lado da esquerda)</li> 
+        </ul>
+
+        <p>
+            - A propriedade &ltpadding&gt compartilha uma ideia similar à do margin, porém, ela é usada para definir o espaço interno de um elemento. Da mesma forma que a propriedade margin, a propriedade padding também aceita de um a quatro valores, que determinam o espaçamento interno do elemento.
+        </p>
+
+        <p>
+            A tag &ltheader&gt é uma tag de agrupamento ou contêiner no HTML. Ela é usada para criar uma seção de cabeçalho em um documento, onde você pode colocar elementos relacionados ao cabeçalho do site, como títulos, logotipos, menus de navegação e outros conteúdos introdutórios. 
+        </p>
+
+        <p>
+            - Na pasta CSS, cria-se um bloco de comando para a tag &ltheader&gt e a partir disso, os comandos são escritos:
+        </p>
+        <ul id="lista_2">
+            <li><span class="blue">header</span> {</li>
+                <li id="top_1">border-bottom: 0px, cor, estilo da borda</li>
+            <li>}</li>
+        </ul>
+
+        <p>
+            - O primeiro valor define a largura da borda. O segundo valor define a cor. O terceiro e último, os estilos da borda (solid,dashed,dotted e double).
+        </p>
+
+        <p>
+            'font-face' é um comando usado no CSS que define uma regra para fontes personalizadas a serem usadas no texto de uma página. Este comando é declarado na pasta CSS da seguinte maneira:
+        </p>
+        <ul id="lista_3">
+          <li><span class="blue">@font-face{}</span></li>
+        </ul>
+        <p>
+            - O @font-face permite que você utilize fontes personalizadas em um site, indo além das fontes padrão disponíveis para os usuários. Dois comandos principais, font-family e src, são utilizados para definir essa funcionalidade.. O primeiro, define o nome da fonte personalizada (o usuário pode colocar o nome que desejar para a fonte). O segundo comando, irá definir o local do arquivo da fonte personalizada (isso porque, é necessário ter salvo no repositório o arquivo que contenha a fonte). Na prática:
+        </p>
+
+        <ul id="lista_4"> 
+            <li><span class="blue">@font-face</span>{</li>
+                <li id="top_2">font-family: "nome-fonte";</li>
+                <li id="top_3">src: url(../nome do arquivo.formato);</li>
+            <li>}</li>
+        </ul>
+
+        <p>
+            - Note que no comando src, ao passar o nome do arquivo, a declaração se inicia com dois pontos e uma barra. Isto indica que o arquivo fonte está em um diretório acima do diretório do CSS (a pasta onde estão os comandos CSS). Portanto, deve-se usar os dois pontos e a barra para passar o arquivo da fonte personalizada.
+        </p>
+
+        <p>
+            - <a href="https://fonts.google.com/" target="_blank">Clique aqui</a> para acessar o site da google onde há vários tipos de fontes personalizadas que podem ser baixadas de graça para usar no código html
+        </p>
+
+        <hgroup>
+            <h2>Semântica</h2>
+        </hgroup>
+
+        <p>
+            A semântica em HTML se refere à utilização de elementos de marcação que expressam o significado e a estrutura do conteúdo de uma página, proporcionando maior compreensão tanto para os desenvolvedores quanto para os mecanismos de busca e leitores de tela. Os elementos section, aside e footer são parte desse conjunto de elementos semânticos, que ajudam a organizar e estruturar o conteúdo de uma página de forma significativa.
+        </p>
+
+        <p>
+            - &ltsection&gt: O elemento section é usado para definir uma seção ou uma divisão temática de conteúdo em uma página. Ele ajuda a agrupar e organizar o conteúdo relacionado, tornando-o mais compreensível. Uma página pode ter várias seções, cada uma delas com um tema ou tópico específico.
+        </p>
+
+        <p>
+            - &ltaside&gt: O elemento aside é usado para conteúdo relacionado ou suplementar que não é parte essencial do conteúdo principal, mas ainda está relacionado a ele. Pode conter informações como barras laterais, anúncios, links relacionados, entre outros.
+        </p>
+
+        <p>
+            -&ltfooter&gt:  O elemento footer é usado para representar o rodapé de uma seção ou da página como um todo. Ele é frequentemente usado para conter informações de autoria, direitos autorais, links de contato ou links para páginas relacionadas.
+        </p>
+        
+        <p>
+            - Para que esses elementos semânticos funcionem conforme o esperado, geralmente é necessário definir regras CSS que os estilizem de acordo com o design desejado. Isso é feito na seção de estilos CSS do seu documento HTML ou em um arquivo CSS separado, que é vinculado ao seu documento HTML.
+        </p>
+
+        <p>
+            - &ltborder&gt é um comando usado para definir linhas. O border pode ser usado para criar linhas entre os comandos de semântica. Ainda é possível usar o right, left e top no comando para definir o sentido da borda.
+       </p>
+    
+        <hgroup>
+            <h2>Tabelas</h2>
+        </hgroup>
+
+        <p>
+            A tag &lttable&gt é usada para criar tabelas. Todo o conteúdo dentro dessa tag é considerado como parte da tabela.
+        </p>
+
+        <p>
+            - &ltcaption&gt é a tag utilizada para definir o título da tabela.
+        </p>
+
+        <p>
+            - Toda tabela é constituída por linhas e colunas. Nas linhas, é onde estaram as células de dados.
+        </p>
+        
+        <p>
+            - As linhas são conhecidas por 'table rows' ou pela tag &lttr&gt. As células são conhecidas como 'table data' ou pela tag &lttd&gt
+        </p>
+
+        <p>
+            - Logo após ter criado a tabela em HTML, será necessário realizar sua formatação utilizando arquivos CSS. Nesse caso, será necessário criar duas formatações: a primeira para definir a borda externa da tabela e a segunda para definir a aparência interna. Na prática:
+        </p>
+
+        <ul id="lista_8">
+        <li><span class="vermelho_claro">#configuração da parte externa/linhas da tabela</span></li>
+            <li><span class="blue">table tr</span>{</li>
+                <li id="top_9">border: 0px solid cor;</li>
+                <li id="top_10">border-spacing: 0px;</li>
+                <li id="top_11">margin: center;</li>
+            <li>}</li>
+        </ul>
+
+        <ul id="lista_9">
+        <li><span class="vermelho_claro">#configuração da parte interna/células da tabela</span></li>
+            <li><span class="blue">table td</span>{</li>
+                <li id="top_12">border: 0px solid cor;</li>
+                <li id="top_13">padding: 0px;</li>
+            <li>}</li>
+        </ul>
+        
+        <p>
+            - rowspan é um atributo HTML usado na tag &lttd&gt para permitir que o conteúdo da célula ocupe mais de uma linha na tabela. Deve ser especificado quantas linhas deseja-se que o conteúdo da célula ocupe. Na prática:
+        </p>
+        <ul id="lista_10">
+            <li>&lt<span class="blue">td</span> rowspan = "2"&gt</li>
+        </ul>
+        <p>
+            - Ainda é possível utilizar os atributos text-align e vertical-align para alinhar o conteúdo das células da tabela no HTML. O text-align é usado para controlar o alinhamento horizontal (à direita, à esquerda ou centralizado) e o vertical-align é usado para controlar o alinhamento vertical (para cima ou para baixo). Aqui está um 
+        </p>
+
+        <p>
+            A tag &ltarticle&gt&lt/article&gt é usada para marcar conteúdo independente e autossuficiente em uma página web. Ela é ideal para marcar elementos como notícias individuais, postagens de blog, histórias ou qualquer outra peça de conteúdo que possa ser considerada como uma entidade distinta e completa em si mesma. Embora possa conter títulos, imagens, vídeos e outros elementos, a tag &ltarticle&gt é geralmente usada para isolar um único item de conteúdo que pode ser distribuído, reutilizado ou referenciado independentemente.
+        </p>
+
+        <p>
+            - Depois de marcar o conteúdo com a tag &ltarticle&gt, o próximo passo será aplicar formatação usando CSS. Isso permitirá controlar a aparência e o estilo desse conteúdo marcado. Dentre os comandos que podem ser incluídos na formatação estão: <span class="brown">font-size, background, padding, margin</span> e etc. Isto irá depender do estilo desejado para os elementos do conteúdo.
+        </p>
+        
+    </div>
+</body>
+</html>
 
