@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="CSS.css"/>
+</head>
+<body>
+    <div>
+        <div id="menu">
+            <nav>
+                <ol>
+                    <li><a href="">Início</li>
+                    <li><a href="">Seção 1</a></li>
+                    <li><a href="">Seção 2</a></li>
+                    <li><a href="">Seção 3</a></li>
+                    <li><a href="">Seção 4</a></li>
+                    <li><a href="">Seção 5</a></li>
+                </ol>
+            </nav>
+        </div>
+        <section>
+            
+        <h2>Estrutura Básica do HTML</h2>
+
+        <figure>
+            <img src="img_3.jpg">
+        </figure>
+    
+        <p>
+            Partindo para as codificações, é importante mencionar, antes de mais nada, que todo documento HTML começa com uma tag de abertura e de fechamento. Uma tag é um elemento utilizado pela linguagem para definir o conteúdo do site que está sendo criado. No caso, a primeira tag a ser escrita é a que envolverá todo o código HTML; em outras palavras, é a tag que marca o início do que será desenvolvido. Na prática:
+        </p>
+        <ul id="lista_1">
+            <li>&lt<span class="blue">html&gt</span></li>
+            <li id="top_1">espaço onde será desenvolvido o documento html</li>
+            <li>&lt/<span class="blue">html</span>&gt</li>
+        </ul>
+        <p>
+            - Note que, na tag de fechamento, é utilizada uma barra dentro dos sinais de menor e maior (colchetes angulares). Essa barra indica o fechamento do conteúdo. Toda tag que encerra algum conteúdo em HTML contém essa barra.
+        </p>
+        <p>
+            Toda tag deve ser escrita dentro de sinais de menor e maior '&lt&gt'.
+        </p>
+         <p>
+            Antes de iniciar a estrutura de comandos HTML, é necessário declarar a instrução &lt!DOCTYPE html&gt. Essa instrução informa ao navegador que o código que será desenvolvido é um documento HTML. O navegador utilizado para executar o código pode ser qualquer um. Na prática:
+        </p>
+        <ul id="lista_2">
+            <li>&lt<span class="blue_destacado">!DOCTYPE html</span>&gt</li>
+            <li>&lt <span class="blue">HTML lang</span>="pt-br"&gt</li>
+            <li>&lt/<span class="blue_destacado">html</span>&gt</li>
+        </ul>
+         <p>
+            <span class="vermelho">OBS:</span> O comando pt-br" informa o idioma no qual será escrito o 
+            documento HTML.
+        </p>
+        <p>
+            Existem outras duas tags importantes que formam a estrutura básica do código HTML. Essas tags são &lthead&gt e &ltbody&gt. Na primeira tag, estarão contidos os comandos responsáveis pelo comportamento e pelas configurações do site. Na segunda tag, estará contido o conteúdo visual do site, como títulos, cores etc. Na prática
+        </p>
+        <ul id="lista_3">
+            <li>&lt<span class="blue_destacado">!DOCTYPE html</span>&gt</li>
+            <li>&lt<span class="blue">html lang</span> = <span class="vermelho_claro">"pt-br"</span>&gt</li>
+            <li>&lt<span class="blue">head</span>&gt</li>
+                <li id="top_2">&ltmeta charset</span> = "UTF-8"/&gt</li>
+                <li id="top_3">&lttitle&gt Nome do Site &lt/title&gt</li>
+            <li>&lt/<span class="blue">head</span>&gt</li>
+            <li>&lt<span class="blue">body</span>&gt</li>
+                <li id="top_4">&lth1&gt Olá, mundo&lt/h1&gt</li>
+                <li id="top_5">&lth2&gt Maldição retirada &lt/h2&gt</li>
+            <li>&lt/<span class="blue">body</span>&gt</li>
+            <li>&lt/<span class="blue_destacado">html</span>&gt</li>
+        </ul>
+        <p>
+            - Note que na tag &lthead&gt estão os comandos que realizarão a configuração do site. O comando &ltmeta charset="UTF-8"&gt será utilizado para definir o conjunto de caracteres como UTF-8, permitindo a exibição correta de caracteres especiais. Além disso, o segundo comando, &lttitle&gt, definirá o título do site que será exibido na barra de título do navegador.
+        </p>
+        <p>
+            - Dentro da tag &ltbody&gt, estão os comandos que definirão a parte visual do site. No caso, o que será exibido é "Olá, mundo" e "Maldição retirada". Esses textos estão envoltos na tag &lth1&gt, que é usada para definir títulos principais do conteúdo da página. Em seguida, a tag &lth2&gt é utilizada para criar sub-títulos relacionados ao conteúdo. Da mesma forma, a tag &lth3&gt pode ser utilizada para criar sub-títulos dos sub-títulos. A lógica segue com as tags &lth4&gt, &lth5&gt, &lth6&gt e assim por diante, para hierarquias de títulos em ordem decrescente.
+        </p>
+        <hgroup>
+            <h2>CSS</h2>
+        </hgroup>
+
+        <figure>
+            <img src="img_4.jpeg">
+        </figure>
+
+        <p>
+            O atributo style é utilizado para definir estilos de CSS diretamente no documento HTML. O style permite a inclusão de estilos da tecnologia CSS dentro do HTML, o que significa que ele adota a sintaxe do CSS para aplicar estilos aos elementos HTML.
+        </p>
+        <p>
+            - O atributo style é responsável por definir o estilo visual do conteúdo do site, como o tipo de fonte, tamanho da fonte, cores, entre outros aspectos de apresentação. Na prática:
+        </p>
+
+        <ul id="lista_4">
+            <li>&lt<span class="blue_destacado">style</span>&gt</li>
+                <li><span class="blue">h1</span>{</li>
+                    <li id="top_6">font-family: Arial;</li>
+                    <li id="top_7">font-size: 30pt;</li>
+                    <li id="top_8">color: black;</li>
+                <li>}</li>
+            <li>&lt/<span class="blue_destacado">style</span>&gt</li>
+        </ul>
+
+        <p>
+            A tag span é usada para aplicar estilos CSS no texto ou em pequenos trechos do texto. Na prática:
+        </p>
+        <ul id="lista_5">
+            <li>&lt<span class="blue">span style</span> = " "&gttexto&lt/<span class="blue">span</span>&gt</li>
+        </ul>
+        <p>
+            - Dentro das aspas, é onde você pode fornecer os parâmetros de estilo para a formatação do texto. Esses parâmetros podem incluir propriedades como font, color e muitos outros do CSS para personalizar a aparência do texto contido na tag &ltspan&gt. É importante notar que os parâmetros e seus valores devem seguir a sintaxe e as regras do CSS para que a formatação seja aplicada corretamente.
+        </p>
+       
+        <p>
+            Para centralizar textos ou até mesmo definir uma margen para um paragráfo em um texto, é usado o atributo style com os seguintes comandos:
+        </p>
+        <ul id="lista_6">
+            <li>&lt<span class="blue_destacado">style</span>&gt</li>
+            <li><span class="blue">p</span>{</li>
+                <li id="top_9">text-align:center;</li>
+            <li>}</li>
+            <li>&lt/<span class="blue_destacado">style</span>&gt</li>
+            
+        </ul>
+        <p>
+            - Esta estrutura será a responsável por centralizar o texto que estiver dentro da tag 'p'.
+        </p>
+        <p>
+            - Logo em seguida, a outra estrutura de comando abaixo, será a responsável por justificar o texto e ainda, adicionar uma margen de um parágrafo no texto (no caso, a margen do parágrafo no comando é de 50px). Lembrando que o style deve ser declarado na tag comportamental do documento html, ou seja, na tag <span class="blue">head</span>. 
+        </p>
+        <ul id="lista_7">        
+            <li>&lt<span class="blue_destacado">style</span>&gt</li>
+            <li><span class="blue">p</span> {</li>
+                <li id="top_10">text-align: justify;</li>
+                <li id="top_11">text-indent: 50px;</li>
+            <li>}</li>
+        </ul>
+        <p>
+            - Desta forma, toda vez que for usada a tag p já será gerado o parágrafo no texto.
+        </p>
+        <hgroup>
+            <h2>Comandos HTML</h2>
+        </hgroup>
+        <p>
+            &lt<span class="blue">img</span> <span class="vermelho_claro">src</span> = "nome do documento de imagem.formato"&gt. Esta é uma tag usada para adicionar imagens no código html. Dentro das aspas do comando é necessaário passar o nome da imagem e o formato de arquivo desta imagem (jpeg, png, gif e etc). Ainda, para facilitar o uso desta tag, é interessante salvar a imagem dentro do mesmo repositório do código html. Na prática:
+        </p>
+        <ul id="lista_8">                    
+            <li>&lt<span class="blue">img</span> <span class="vermelho_claro">src</span> = "imagem-exemplo.JPG"/&gt</li>
+        </ul>
+        <p>     
+            A tag &ltbr&gt é usada para a quebra de linhas dentro do texto ou entre títulos no código HTML. Outro comando similar que pode ser usado em conjunto é o nbsp;. Este comando é usado para criar espaços entre textos. Sua aplicação correta no código deve ser:
+        </p>    
+        <ul id="lista_9">                        
+            <li>&lt<span class="blue">h1</span>&gt texto 1 <span class="vermelho_claro">&ampnbsp</span> texto 2 &lt<span class="blue">h1</span>&gt</li>
+        </ul>
+        <p>
+            - Estes comandos de formatação são importantes em qualquer texto dentro do código html. Mesmo que esteja todo organizado no código html, o texto será mostrado de forma desorganizada e confusa no navegador. Isso acontece porque o html não reconhece espaços, parágrafos e quebra de linhas se não por meio de tags específicas como as apresentadas para esta finalidade.
+        </p>
+        <p>
+            &lt<span class="blue">p</span>&gt é usada para criar parágrafos. Se dado um texto, este estiver dentro desta tag, ao executar o código no navegador, será mostrado o texto em um parágrafo.
+        </p>
+        <p>
+            &lt<span class="blue">wbr</span>&gt tag usada para quebra de palavras no texto. Este é um comando usado para para permitir que uma palavra não estrague o layout da página no navegador.
+        </p>
+         <p>
+            A tag &lt<span class="blue">del</span>&gt é usada para riscar um texto, indicando que ele foi apagado
+        </p>
+       
+        </p>
+        <p>
+            Dentro da tag head, é possível utilizar uma estrutura de comandos para definir cores para o site. Na prática:
+        </p> 
+        <ul id="lista_10">            
+            <li><span class="blue">body</span>{</li>
+                <li id="top_12">background-color:#a514cd;</li>
+                <li id="top_13">color: black;</li>
+            <li>}</li>
+        </ul>
+        <p>
+            - O background-color define a cor de fundo do elemento. O color define a cor do texto dentro do elemento. O código de cores declarado no background-color é uma representação hexadecimal que combina três canais de cores: vermelho, verde e azul. Cada canal vai de 00 (nenhuma intensidade) a FF (intensidade máxima). Essa combinação cria uma ampla gama de cores.
+        </p>
+        <p>
+            &nbsp;&nbsp;a5: indica a quantidade de vermelho<br>
+            &nbsp;&nbsp;14: quantidade de verde<br>
+            &nbsp;&nbsp;cd: quantidade de azul<br>
+        </p>
+        <p>
+            Importante mencionar que ao invés do código hexadecimal, poderia ser simplesmente declarado o nome de uma cor para todo o site. Porém, com este código, é possível ter uma ampla gama de cores e variações de cores.
+        </p>
+        <p>
+           Para gerar códigos hexadecimais para as cores é possível utilizar ferramentas on-line que fornecem seletores de cores e geram códigos hexadecimais automaticamente, usar extensões ou plugins de navegadores que permitem capturar cores diretamente das páginas da web e explorar bibliotecas de cores em frameworks de design para encontrar paletas adequadas.
+        </p>
+        <p>
+            Outra forma de configurar cores com o background é com o rgb(). Neste comando, os valores de tonalidade de cada uma das cores é passado sem usar números hexadecimais, ou seja, de forma inteira. Na prática:
+        </p>
+        <ul id="lista_11">
+            <li id="top_14">background-color: rgb(85,100,150);</li>
+        </ul>
+    </section>
+
+    </div>
+
+</body>
+</html>
